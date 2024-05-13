@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>Contact</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,99 +11,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      #contacts-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6%;
-        max-width: 90%;
-        margin: 6% auto;
-      }
-
-      #contact-from h1 {
-        font-size: 3rem;
-        color: #1d9bf0;
-        font-weight: 700;
-        margin-bottom: 8%;
-      }
-
-      #contact-from button {
-        font-size: 1.5rem;
-        width: 25%;
-      }
-      #contact-from input {
-        padding: 3%;
-        width: 100%;
-        border-radius: 18px;
-        margin-top: 8%;
-      }
-      #contact-from textarea {
-        padding: 10px;
-        width: 100%;
-        border-radius: 18px;
-        margin-top: 6%;
-      }
-      #contact-from button {
-        margin-top: 6%;
-        border-radius: 12px;
-        font-size: 1.2rem;
-        padding: 2.2%;
-        background-color: #1d9bf0;
-        color: white;
-        border: none;
-        transition: all 0.5s;
-        cursor: pointer;
-      }
-      #contact-from button:hover {
-        background-color: black;
-        transform: scale(1.1);
-      }
-
-      #contact-from button > i {
-        margin-left: 10px;
-      }
-      #contact-from-info {
-        display: flex;
-        flex-direction: column;
-        margin-top: 18%;
-      }
-      #contact-from-info > div {
-        display: flex;
-        align-items: center;
-        gap: 5%;
-        margin-top: 8%;
-      }
-      #contact-from-info > div > i {
-        background-color: black;
-        color: white;
-        font-size: 1.2rem;
-        padding: 0.8rem;
-        border-radius: 100%;
-        transition: all 0.4s;
-        cursor: pointer;
-      }
-      #contact-from-info > div > i:hover {
-        background-color: #1d9bf0;
-        transform: scale(1.1);
-      }
-      #contact-from-info > div > P {
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      #contact-from-info #profile {
-        display: flex;
-        gap: 10%;
-        margin-top: 15%;
-        margin-left: 35%;
-      }
-    </style>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/index.css" />
+  
   </head>
   <body>
+    <header>
+      <section>
+        <div id="drawer">
+          <button id="closeDrawer">&#10005;</button>
+          <nav>
+            <ul>
+                <li id="drawer-nav-ite1"><a href="./">Home</a></li>
+                <li id="drawer-nav-ite2"><a href="./about.html">About me</a></li>
+                <li id="drawer-nav-ite3"><a href="./storia.html">Storia</a></li>
+                <li id="drawer-nav-ite4">
+                  <a href="./famoso.html">Figura Famoso</a>
+                </li>
+                <li id="drawer-nav-ite5"><a href="./trailer.html">Trailer</a></li>
+                <li id="drawer-nav-ite6">
+                  <a href="./advatising.html">Advertising</a>
+                </li>
+                <li id="drawer-nav-ite7"><a href="./Tech.html">Tech.com</a></li>
+                <li id="drawer-nav-ite8">
+                  <a href="./stage.html">Ma Stage </a>
+                </li>
+                <li id="drawer-nav-ite9">
+                  <a href="./francese.html">FRANCESE </a>
+                </li>
+                <li id="drawer-nav-ite10">
+                  <a href="./contact.html">Contract</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section>
+        <div class="navigation-bar">
+          <div>
+            <button id="toggleDrawer">&#9776; Menu</button>
+          </div>
+          <div>
+            <img
+              id="nav-logo"
+              src="imges/logo/bollywood_light_png.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      </section>
+    </header>
     <main>
       <div id="contacts-container">
         <div id="contact-from">
@@ -126,7 +85,9 @@
             placeholder="Type your message...."
           ></textarea>
 
-          <button>Send <i class="fa-regular fa-paper-plane"></i></button>
+          <button id="csend-btn">
+            Send <i class="fa-regular fa-paper-plane"></i>
+          </button>
         </div>
 
         <div id="contact-from-info">
@@ -149,9 +110,35 @@
             <i class="fa-brands fa-twitter"></i>
           </div>
         </div>
-        <div></div>
+
+        <div id="contaci-image">
+          <img style="width: 100%" src="imges/img/contact.jpg" alt="" />
+        </div>
       </div>
     </main>
+    <footer style="margin: 40px">
+        <p style="text-align: center">
+          Design & Developed by
+          <a style="text-decoration: none" href="https://ecoysoft.com"
+            >ecoysoft environment Inc</a
+          >
+        </p>
+      </footer>
     <script src="js/script.js"></script>
+      <!-- gsap st-->
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap end  -->
   </body>
 </html>

@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var drawerNavItem6 = document.getElementById("drawer-nav-ite6");
   var drawerNavItem7 = document.getElementById("drawer-nav-ite7");
   var drawerNavItem8 = document.getElementById("drawer-nav-ite8");
+  var drawerNavItem9 = document.getElementById("drawer-nav-ite9");
+  var drawerNavItem10 = document.getElementById("drawer-nav-ite10");
 
   toggleDrawer.onclick = function () {
     drawer.style.left = "0";
@@ -39,6 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     drawerNavItem8.style.left = "0";
     drawerNavItem8.style.transitionDelay = "1s";
+
+    drawerNavItem9.style.left = "0";
+    drawerNavItem9.style.transitionDelay = "1.1s";
+
+    drawerNavItem10.style.left = "0";
+    drawerNavItem10.style.transitionDelay = "1.2s";
   };
 
   closeDrawer.onclick = function () {
@@ -49,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     drawerNavItem1.style.transitionDelay = "1s";
 
     drawerNavItem2.style.left = "-100%";
-    drawerNavItem2.style.transitionDelay = "900ms";
+    drawerNavItem2.style.transitionDelay = "850ms";
 
     drawerNavItem3.style.left = "-100%";
     drawerNavItem3.style.transitionDelay = "750ms";
@@ -58,16 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
     drawerNavItem4.style.transitionDelay = "650ms";
 
     drawerNavItem5.style.left = "-100%";
-    drawerNavItem5.style.transitionDelay = "500ms";
+    drawerNavItem5.style.transitionDelay = "550ms";
 
     drawerNavItem6.style.left = "-100%";
-    drawerNavItem6.style.transitionDelay = "350ms";
+    drawerNavItem6.style.transitionDelay = "460ms";
 
     drawerNavItem7.style.left = "-100%";
-    drawerNavItem7.style.transitionDelay = "200ms";
+    drawerNavItem7.style.transitionDelay = "350ms";
 
     drawerNavItem8.style.left = "-100%";
-    drawerNavItem8.style.transitionDelay = "50ms";
+    drawerNavItem8.style.transitionDelay = "250ms";
+
+    drawerNavItem9.style.left = "-100%";
+    drawerNavItem9.style.transitionDelay = "150ms";
+
+    drawerNavItem10.style.left = "-100%";
+    drawerNavItem10.style.transitionDelay = "50ms";
   };
 });
 
@@ -136,6 +150,8 @@ function info(btn, img, name, infoData) {
     }
   });
 }
+
+// ------------------Contact ---------------------
 
 // gsap ----------------->
 gsap.to(".navigation-bar", {
