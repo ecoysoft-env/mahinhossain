@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #contacts-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6%;
+        max-width: 90%;
+        margin: 6% auto;
+      }
+
+      #contact-from h1 {
+        font-size: 3rem;
+        color: #1d9bf0;
+        font-weight: 700;
+        margin-bottom: 8%;
+      }
+
+      #contact-from button {
+        font-size: 1.5rem;
+        width: 25%;
+      }
+      #contact-from input {
+        padding: 3%;
+        width: 100%;
+        border-radius: 18px;
+        margin-top: 8%;
+      }
+      #contact-from textarea {
+        padding: 10px;
+        width: 100%;
+        border-radius: 18px;
+        margin-top: 6%;
+      }
+      #contact-from button {
+        margin-top: 6%;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        padding: 2.2%;
+        background-color: #1d9bf0;
+        color: white;
+        border: none;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      #contact-from button:hover {
+        background-color: black;
+        transform: scale(1.1);
+      }
+
+      #contact-from button > i {
+        margin-left: 10px;
+      }
+      #contact-from-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18%;
+      }
+      #contact-from-info > div {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        margin-top: 8%;
+      }
+      #contact-from-info > div > i {
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        border-radius: 100%;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+      #contact-from-info > div > i:hover {
+        background-color: #1d9bf0;
+        transform: scale(1.1);
+      }
+      #contact-from-info > div > P {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      #contact-from-info #profile {
+        display: flex;
+        gap: 10%;
+        margin-top: 15%;
+        margin-left: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="contacts-container">
+        <div id="contact-from">
+          <h1>Contacts</h1>
+          <input
+            id="input-field"
+            type="text"
+            placeholder="Type Your Full Name"
+          />
+          <input
+            type="email"
+            name=""
+            id="input-field1"
+            placeholder="Type Your Email Address"
+          />
+          <textarea
+            name=""
+            id="input-field1"
+            rows="10"
+            placeholder="Type your message...."
+          ></textarea>
+
+          <button>Send <i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+
+        <div id="contact-from-info">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <p>Document of Meraj</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>012345678910</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Location.........</p>
+          </div>
+
+          <div id="profile">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
